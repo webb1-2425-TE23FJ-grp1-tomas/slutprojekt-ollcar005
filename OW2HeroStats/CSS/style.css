@@ -1,0 +1,38 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+}
+
+.navbar {
+    background-color: rgb(218, 218, 218);
+}
+
+#ow2logo {
+    width:100px;
+    margin:10px
+}
+
+.logobox {
+    display:flex;
+    align-items: center;
+}
+
+.boxes {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.characters {
+    display:flex;
+
+}
+
+#ana {
+    grid-area: item-1;
+}
+#ashe {
+    grid-area: item-2;
+}
