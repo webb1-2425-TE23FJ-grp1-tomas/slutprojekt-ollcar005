@@ -1,10 +1,34 @@
 const ana = document.querySelector("#ana");
-const burgerMenu = document.querySelector(".hamburger-menu");
+const menuList = document.querySelector("#menu");
+const burger = document.querySelector("#burger");
+const stats = document.querySelector(".stats");
+let menuHidden = true;
+let openedBox = false;
 
 ana.addEventListener("click", function(){
     ana.classList.toggle("opened");
+    if(!openedBox) {
+        document.getElementById("anaIMG").src = "assets/heroes/Ana-Big.webp";
+        
+        openedBox = true;
+
+        stats.setAttribute("style", "display:block;");
+    } else {
+        document.getElementById("anaIMG").src = "assets/heroes/Icon-Ana.webp";
+        
+        openedBox = false;
+
+        stats.setAttribute("style", "display:none;");
+    }
 })
 
-burgerMenu.addEventListener("click", function(){
-    document.getElementById("menu").classList.toggle("hidden");
+burger.addEventListener("click", function(){
+    if(menuHidden){
+        menuList.setAttribute("style", "display:block;");
+        menuHidden = false;
+    } else {
+        menuList.setAttribute("style", "display:none;");
+        menuHidden = true;
+    }
+    
 })

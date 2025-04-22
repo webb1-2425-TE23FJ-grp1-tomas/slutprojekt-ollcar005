@@ -27,10 +27,6 @@ a {
 }
 
 .opened{
-    /* position:fixed;
-    left:20px;
-    right:20px;
-    top:150px; */
     box-shadow: 1px 1px 10px 5px;
     grid-column: span 2;
 }
@@ -49,6 +45,7 @@ a {
 }
 
 #menu {
+    display:none;
     margin:40px;
 }
 
@@ -101,10 +98,14 @@ a {
     border-left: solid 3px var(--accent-color);
 }
 
+.stats {
+    display:none;
+}
+
 .leftside {
     display:flex;
     align-items: center;
-    object-fit: contain;
+    flex-direction: column;
 }
 
 .rightside {
@@ -134,12 +135,16 @@ a {
     .boxes {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .hamburger-menu {
+    #burger{
         display:none;
     }
-    .menu {
+    #menu {
         display:flex;
+        flex-direction: row;
         align-items: center;
+        margin:20px;
+    }
+    .menuElements{
         margin:20px;
     }
     .menu a {

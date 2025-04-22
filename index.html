@@ -17,20 +17,20 @@
             <h1>Overwatch BilgeRat</h1>
         </div>
         <div class="hamburger-menu">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" id="burger">
                 menu
             </span>
             <div id="menu">
-                <a href="index.html">
+                <a href="index.html" class="menuElements">
                     <p>Home</p>
                 </a>
-                <a href="info.html">
+                <a href="info.html" class="menuElements">
                     <p>about us</p>
                 </a>
-                <a href="https://overwatch.blizzard.com/en-gb/">
+                <a href="https://overwatch.blizzard.com/en-gb/" class="menuElements">
                     <p>Overwatch 2</p>
                 </a>
-                <a href="https://overwatch.fandom.com/wiki/Overwatch_2">
+                <a href="https://overwatch.fandom.com/wiki/Overwatch_2" class="menuElements">
                     <p>Fandom Wiki</p>
                 </a>
             </div>
@@ -49,8 +49,13 @@
                 <div class="leftside">
                     <div class="heroImageDiv">
                         <picture>
-                            <img class="heroImage" src="assets/heroes/Icon-Ana.webp" alt="Ana Amari">
+                            <img class="heroImage" id="anaIMG" src="assets/heroes/Icon-Ana.webp" alt="Ana Amari">
                         </picture>
+                    </div>
+                    <div class="stats">
+                        <h3>250 HP</h3>
+                        <h3>Ult cost: 2300 points</h3>
+
                     </div>
                 </div>
                 <div class="rightside">
@@ -59,6 +64,9 @@
                     </div>
                     <div class="class">
                         <img src="assets/SupportIcon.webp" alt="Support">
+                    </div>
+                    <div class="stats" id="rightStats">
+                        
                     </div>
                 </div>
             </div>
