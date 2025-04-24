@@ -34,7 +34,8 @@ a {
 .hamburger-menu {
     display:flex;
     font-size: 40px;
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     cursor:pointer;
     flex-direction: column;
     align-items: center;
@@ -46,7 +47,8 @@ a {
 
 #menu {
     display:none;
-    margin:40px;
+    margin-left:40px;
+    margin-right:40px;
 }
 
 .navbar {
@@ -145,7 +147,8 @@ a {
         margin:20px;
     }
     .menuElements{
-        margin:20px;
+        margin-left:20px;
+        margin-right:20px;
     }
     .menu a {
         margin:20px;
