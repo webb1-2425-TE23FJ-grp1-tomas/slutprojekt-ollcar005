@@ -22,13 +22,18 @@ ana.addEventListener("click", function(){
     }
 })
 
-burger.addEventListener("click", function(){
-    if(menuHidden){
-        menuList.setAttribute("style", "display:block;");
-        menuHidden = false;
-    } else {
-        menuList.setAttribute("style", "display:none;");
-        menuHidden = true;
-    }
+// burger.addEventListener("click", function(){
+//     if(menuHidden){
+//         menuList.setAttribute("style", "display:block;");
+//         menuHidden = false;
+//     } else {
+//         menuList.setAttribute("style", "display:none;");
+//         menuHidden = true;
+//     }
     
-})
+// })
+
+burger.addEventListener('click', function() {
+    this.classList.toggle("close");
+    menuList.classList.toggle("overlay");
+  });

@@ -31,6 +31,10 @@ a {
     grid-column: span 2;
 }
 
+.aboutusinfo {
+    color:white;
+}
+
 .hamburger-menu {
     display:flex;
     font-size: 40px;
@@ -41,14 +45,139 @@ a {
     align-items: center;
 }
 
-.material-symbols-outlined {
-    font-size:64px !important;
+.class {
+    margin-bottom:10px;
 }
 
-#menu {
+#burger {
+	cursor: pointer;
+	height: 27px;
+	width: 27px;
+	margin: 50px;
+	overflow: visible;
+	position: relative;
+	z-index: 2;
+}
+
+    span,
+	span:before,
+	span:after {
+		background: #fff;
+		display: block;
+		height: 2px;
+		opacity: 1;
+		position: absolute;
+		transition: 0.3s ease-in-out;
+	}
+
+	span:before,
+	span:after {
+		content: '';
+	}
+
+
+	span:before {
+		left: 0px;
+		top: -10px;
+		width: 27px;
+	}
+
+
+	span {
+		right: 0px;
+		top: 13px;
+		width: 27px;
+	}
+
+
+	span:after {
+		left: 0px;
+		top: 10px;
+		width: 27px;
+	}
+
+
+	&.close {
+
+		span:before {
+			top: 0px;
+			transform: rotate(90deg);
+			width: 27px;
+		}
+
+	
+		span {
+			transform: rotate(-45deg);
+			top: 13px;
+			width: 27px;
+		}
+
+	
+		span:after {
+			top: 0px;
+			left: 0;
+			transform: rotate(90deg);
+			opacity: 0;
+			width: 0;
+		}
+	}
+
+
+/* #menu {
+    color: var(--bg-color);
     display:none;
     margin-left:40px;
     margin-right:40px;
+} */
+
+#menu {
+	z-index: 1;
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	height: 0;
+    left:0;
+	visibility: hidden;
+	opacity: 0;
+	text-align: center;
+	padding-top: 20px;
+	transition: all 0.3s ease-in-out;
+
+	&.overlay {
+		visibility: visible;
+		opacity: 1;
+		padding-top: 100px;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		color: #fff;
+		display: block;
+		font-size: 32px;
+		margin-bottom: 30px;
+		text-decoration: none;
+	}
+}
+
+#menulist{
+    list-style-type: none;
+}
+
+#menuPC {
+    display:none;
+}
+#menulistPC {
+    flex-direction: row;
+    list-style-type: none;
 }
 
 .navbar {
@@ -75,7 +204,7 @@ a {
 }
 
 .boxes {
-    margin-top: 150px;
+    margin-top: 200px;
     display:grid;
     grid-template-columns: 1fr 1fr; 
     padding-bottom:150px;
@@ -83,15 +212,16 @@ a {
 
 .heroImage {
     border-radius: 10px;
-    width:150%;
+    margin:10px;
+    width:100%;
 }
 
 .characters {
     display:grid;
     background-color: var(--box-color);
-    padding:20px;
+    padding:0px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
     grid-template-columns: 1fr 1fr;
     cursor:pointer;
 }
@@ -129,7 +259,7 @@ a {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     color: var(--accent-color)
 }
 
@@ -140,7 +270,7 @@ a {
     #burger{
         display:none;
     }
-    #menu {
+    #menuPC {
         display:flex;
         flex-direction: row;
         align-items: center;
@@ -150,7 +280,7 @@ a {
         margin-left:20px;
         margin-right:20px;
     }
-    .menu a {
+    .menuPC a {
         margin:20px;
     }
 }
