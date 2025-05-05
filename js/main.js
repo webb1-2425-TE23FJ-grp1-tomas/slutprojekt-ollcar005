@@ -2,6 +2,7 @@ const ana = document.querySelector("#ana");
 const menuList = document.querySelector("#menu");
 const burger = document.querySelector("#burger");
 const stats = document.querySelector(".stats");
+const stats2 = document.querySelector(".stats2");
 let menuHidden = true;
 let openedBox = false;
 
@@ -13,12 +14,14 @@ ana.addEventListener("click", function(){
         openedBox = true;
 
         stats.setAttribute("style", "display:block;");
+        stats2.setAttribute("style", "display:block;");
     } else {
         document.getElementById("anaIMG").src = "assets/heroes/Icon-Ana.webp";
         
         openedBox = false;
 
         stats.setAttribute("style", "display:none;");
+        stats2.setAttribute("style", "display:none;");
     }
 })
 
