@@ -35,12 +35,12 @@ a {
 }
 
 .opened{
-    box-shadow: 1px 1px 10px 5px;
-    /* grid-column: span 2; */
+    box-shadow: 1px 1px 10px 5px black;
 }
 
 .aboutusinfo {
     margin-left: 50px;
+    margin-right: 50px;
     margin-top: 200px;
     padding-bottom: 300px;
     color:white;
@@ -51,7 +51,6 @@ a {
     font-size: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    cursor:pointer;
     flex-direction: column;
     align-items: center;
 }
@@ -71,7 +70,7 @@ a {
 	z-index: 2;
 }
 
-/* Imported from other site */
+/* Imported code from other site */
 
 #menu {
 	z-index: 1;
@@ -157,13 +156,18 @@ a {
 }
 
 .heroImage {
-    padding:20px;
+    
     border-radius: 10px;
     margin:10px;
     width:100%;
 }
 
+.heroImageDiv {
+    padding:20px;
+}
+
 .characters {
+    color:white;
     display:grid;
     background-color: var(--box-color);
     padding:0px;
@@ -178,12 +182,10 @@ a {
 }
 
 .stats {
-    color:var(--accent-color);
     display:none;
     margin-top: 82px;
 }
 .stats2 {
-    color:var(--accent-color);
     display:none;
     margin-bottom: 30px;
 }
@@ -238,12 +240,12 @@ a {
     #menuPC {
         display:block;
     }
-    #menulistPC {
-
-    }
-    li {
-
+    #menulistPC li {
         display: inline-block;
+        border-radius: 5px;;
+    }
+    #menulistPC li:hover {
+        background-color: #9191b1;
     }
     .menuElements p{
         margin-left: 20px;
@@ -255,7 +257,7 @@ a {
         margin:20px;
     }
     .opened{
-        box-shadow: 1px 1px 10px 5px;
+        box-shadow: 1px 1px 10px 5px black;
         grid-column: span 2;
     }
 }
