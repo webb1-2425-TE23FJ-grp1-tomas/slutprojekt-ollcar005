@@ -3,7 +3,7 @@ const menuList = document.querySelector("#menu");
 const burger = document.querySelector("#burger");
 const stats = document.querySelector(".stats");
 const stats2 = document.querySelector(".stats2");
-let menuHidden = true;
+// let menuHidden = true;
 let openedBox = false;
 
 ana.addEventListener("click", function(){

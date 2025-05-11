@@ -1,5 +1,6 @@
 * {
     box-sizing:border-box;
+    --statbox-color:#1a4c5c;
     --bg-color:#0c1923;
     --box-color: #0d3440; 
     --box-hover-color: #0c283b; 
@@ -32,6 +33,12 @@ h2 {
 
 a {
     text-decoration: none;
+    color:var(--bg-color);
+}
+
+.link {
+    color:var(--accent-color);
+    text-decoration: underline;
 }
 
 .opened{
@@ -155,6 +162,14 @@ a {
     padding-bottom:150px;
 }
 
+.statsBG {
+    background-color: var(--statbox-color);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    padding:5px;
+    margin:5px;
+}
+
 .heroImage {
     
     border-radius: 10px;
@@ -184,14 +199,13 @@ a {
 .stats {
     display:none;
     margin-top: 82px;
+    
 }
 .stats2 {
     display:none;
     margin-bottom: 30px;
 }
-.statboxes{
-    padding:7.5px;
-}
+
 
 .leftside {
     display:flex;
