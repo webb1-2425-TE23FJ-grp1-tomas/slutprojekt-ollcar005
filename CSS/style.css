@@ -53,6 +53,11 @@ a {
     color:white;
 }
 
+.infocontent {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .hamburger-menu {
     display:flex;
     font-size: 40px;
@@ -171,8 +176,12 @@ a {
 }
 
 .heroImage {
-    
     border-radius: 10px;
+    margin:10px;
+    width:100%;
+}
+
+.ow2-background {
     margin:10px;
     width:100%;
 }
