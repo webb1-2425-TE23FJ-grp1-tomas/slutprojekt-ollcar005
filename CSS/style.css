@@ -14,13 +14,11 @@
   }
 
 .maininfo {
-    display:flex;
-    justify-content:center;
     background-color: #414552;
 }
 
 .infocontent {
-    width:50%;
+    width:100%;
     background-color: var(--bg-color);
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
 }
@@ -131,6 +129,10 @@ a {
 
 /* import stops here */
 
+#chad {
+    
+}
+
 #menulist{
     list-style-type: none;
 }
@@ -144,6 +146,7 @@ a {
 }
 
 .navbar {
+    z-index: 100;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -248,7 +251,32 @@ a {
     color: var(--accent-color)
 }
 
+.splideIMG {
+    width:80%;
+}
+
+.splide {
+    padding-top:100px;
+    margin:40px;
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (min-width: 940px) {
+    .maininfo {
+        display:flex;
+        justify-content:center;
+        background-color: #414552;
+    }
+    .infocontent {
+        width:50%;
+        background-color: var(--bg-color);
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+    }
     .boxes {
         margin-top: 140px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -264,6 +292,9 @@ a {
     }
     #menuPC {
         display:block;
+    }
+    #menulistPC{
+        font-size: 1.5rem;
     }
     #menulistPC li {
         display: inline-block;
