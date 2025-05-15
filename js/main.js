@@ -37,6 +37,5 @@ ana.addEventListener("click", function(){
 // })
 
 burger.addEventListener('click', function() {
-    this.classList.toggle("close");
     menuList.classList.toggle("overlay");
   });
