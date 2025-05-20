@@ -217,16 +217,6 @@ a {
     margin-bottom: 30px;
 }
 
-.statsAshe {
-    display:none;
-    margin-top: 82px;
-    
-}
-.stats2Ashe {
-    display:none;
-    margin-bottom: 30px;
-}
-
 
 .leftside {
     display:flex;
@@ -238,6 +228,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+h3 {
+    font-size: 1.6rem;
 }
 
 .name {
