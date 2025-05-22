@@ -63,6 +63,10 @@ a {
     color:white;
 }
 
+.aboutusinfo p {
+    font-size: 1.3rem;
+}
+
 .hamburger-menu {
     display:flex;
     font-size: 40px;
@@ -73,7 +77,7 @@ a {
 }
 
 .class {
-    margin-bottom:10px;
+    margin-bottom:50px;
 }
 
 #burger {
